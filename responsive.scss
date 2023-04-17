@@ -1,0 +1,783 @@
+$blue: rgba(74, 111, 207, 1);
+@media (min-width: 720px) {
+	// ! NAVIGATION
+
+	.main-nav {
+		padding: 4rem 2rem;
+	}
+
+	.navigation {
+		width: 60%;
+	}
+
+	// ! NAVIGATION
+	// ! HERO
+
+	.hero-con {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		align-items: flex-start;
+		justify-content: space-between;
+		padding-top: 4rem;
+
+		article {
+			margin: 0;
+
+			.main-text {
+				text-align: left;
+				margin-bottom: 2rem;
+				font-size: 2.5rem;
+			}
+
+			.sub-text {
+				text-align: left;
+				font-size: 1.6rem;
+			}
+
+			.btns {
+				justify-content: flex-start;
+			}
+		}
+
+		.hero-img {
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	// ! HERO
+
+	// ! STRIPE
+	.stripe {
+		& > .container > h2 {
+			width: 100%;
+			font-size: 2rem;
+		}
+
+		.details {
+			div {
+				h2 {
+					font-size: 2.6rem;
+				}
+
+				p {
+					font-size: 1.6rem;
+				}
+			}
+		}
+	}
+
+	// ! STRIPE
+	// ! REASON
+
+	.reasons {
+		.dots {
+			width: 20rem;
+			bottom: -2rem;
+		}
+
+		.t-img {
+			width: 100%;
+			position: relative;
+			top: -4rem;
+		}
+
+		.container {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			align-items: flex-end;
+			gap: 2rem;
+		}
+
+		article {
+			h2 {
+				margin-top: 0;
+			}
+		}
+	}
+
+	// ! REASON
+	// ! COURSES
+
+	.courses {
+		grid-template-columns: repeat(2, 1fr);
+
+		.course {
+			max-width: 33rem;
+		}
+	}
+	// ! COURSES
+	// ! TESTIMONIAL
+	.testimonials {
+		.top-row {
+			display: flex;
+			justify-content: space-between;
+
+			h2 {
+				font-size: 1.4rem;
+			}
+
+			p {
+				font-size: 1.6rem;
+			}
+		}
+		.testimonies {
+			height: 32rem;
+
+			.review {
+				max-width: 45rem;
+
+				.rating {
+					img {
+						width: 1.4rem;
+					}
+				}
+
+				h3 {
+					font-size: 1.5rem;
+				}
+				.client-rev {
+					font-size: 1.5rem;
+				}
+				.client {
+					gap: 2rem;
+
+					h4 {
+						font-size: 1.3rem;
+					}
+
+					p {
+						font-size: 1.4rem;
+					}
+
+					img {
+						width: 5rem;
+						height: 5rem;
+					}
+				}
+			}
+		}
+	}
+	// ! TESTIMONIAL
+
+	// ! HIRING
+	.hiring {
+		height: 32rem;
+
+		img {
+			width: 15rem;
+		}
+
+		article {
+			.intro {
+				font-size: 2rem;
+			}
+
+			.main-txt {
+				font-size: 2.8rem;
+			}
+		}
+	}
+	// ! HIRING
+
+	// ! FOOTER
+	footer {
+		.footer {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 4rem;
+			font-size: 1.6rem;
+
+			.comp-details {
+				width: 30rem;
+
+				.comp-logo {
+					width: 15rem;
+					margin-bottom: 2rem;
+				}
+				.socials {
+					width: 15rem;
+
+					img {
+						width: 3rem;
+					}
+				}
+			}
+
+			.newsletter {
+				width: 30rem;
+				form {
+					width: 25rem;
+				}
+			}
+		}
+
+		.copy {
+			font-size: 1.6rem;
+		}
+	}
+	// ! FOOTER
+}
+
+@media (min-width: 990px) {
+	// ! NAVIGATION
+
+	.main-nav {
+		padding: 4rem 2rem;
+	}
+
+	.nav-btn {
+		display: none;
+	}
+
+	.navigation {
+		position: relative;
+		background-color: #fff;
+		inset: 0;
+		width: 70%;
+		height: auto;
+		padding: 0;
+		text-align: left;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 1.6rem;
+		font-weight: 600;
+		transition: 0.5s;
+		z-index: 900;
+
+		.current-pg {
+			color: $blue;
+			position: relative;
+
+			&::after {
+				content: "";
+				position: absolute;
+				width: 130%;
+				height: 0.3rem;
+				bottom: 0;
+				background-color: $blue;
+				left: 50%;
+				translate: -50%;
+				border-radius: 1rem;
+			}
+		}
+
+		.nav-list {
+			line-height: 1.7;
+			display: flex;
+			gap: 1.5rem;
+
+			.list-item {
+				cursor: pointer;
+
+				&:hover {
+					color: $blue;
+				}
+			}
+		}
+
+		.login-nav {
+			margin-top: 0;
+			display: flex;
+			align-items: center;
+			gap: 2rem;
+
+			.login-nav-item {
+				margin-top: 0;
+			}
+
+			.sp {
+				border: 2px solid $blue;
+				color: #fff;
+				background-color: $blue;
+				padding: 0.5rem 0.7rem;
+				border-radius: 0.7rem;
+			}
+		}
+	}
+
+	// ! NAVIGATION
+	// ! HERO
+
+	.hero-con {
+		padding-top: 6rem;
+
+		article {
+			margin: 0;
+
+			.main-text {
+				text-align: left;
+				margin-top: 3rem;
+				margin-bottom: 3rem;
+				font-size: 3.2rem;
+			}
+
+			.sub-text {
+				text-align: left;
+				font-size: 1.7rem;
+				margin-bottom: 3rem;
+			}
+
+			.btns {
+				justify-content: flex-start;
+			}
+		}
+
+		.hero-img {
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	// ! HERO
+
+	// ! STRIPE
+	.stripe {
+		& > .container > h2 {
+			width: 100%;
+			font-size: 2rem;
+		}
+
+		.details {
+			div {
+				h2 {
+					font-size: 3.2rem;
+				}
+
+				p {
+					font-size: 1.6rem;
+				}
+			}
+		}
+	}
+
+	// ! STRIPE
+	// ! REASON
+
+	.reasons {
+		.dots {
+			width: 20rem;
+			bottom: -2rem;
+		}
+
+		.t-img {
+			width: 100%;
+			position: relative;
+			top: -4rem;
+		}
+
+		.container {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			align-items: center;
+			gap: 2rem;
+		}
+
+		article {
+			h2 {
+				margin-top: 2rem;
+				font-size: 2.4rem;
+			}
+
+			p {
+				font-size: 2rem;
+			}
+		}
+
+		.li-check {
+			font-size: 1.6rem;
+		}
+	}
+
+	// ! REASON
+	// ! COURSES
+
+	.courses {
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 2rem;
+
+		.course {
+			max-width: 35rem;
+		}
+	}
+	// ! COURSES
+	// ! TESTIMONIAL
+	.testimonials {
+		margin: 10rem 0;
+		.top-row {
+			display: flex;
+			justify-content: space-between;
+
+			h2 {
+				font-size: 1.6rem;
+			}
+
+			p {
+				font-size: 1.9rem;
+			}
+		}
+		.testimonies {
+			height: 35rem;
+			.review {
+				max-width: 60rem;
+				padding: 2rem;
+
+				.rating {
+					img {
+						width: 1.6rem;
+					}
+				}
+
+				h3 {
+					font-size: 1.8rem;
+				}
+				.client-rev {
+					font-size: 1.8rem;
+				}
+				.client {
+					gap: 2rem;
+					margin-top: 3rem;
+
+					h4 {
+						font-size: 1.3rem;
+					}
+
+					p {
+						font-size: 1.4rem;
+					}
+
+					img {
+						width: 6rem;
+						height: 6rem;
+					}
+				}
+			}
+		}
+	}
+	// ! TESTIMONIAL
+
+	// ! HIRING
+	.hiring {
+		height: 39rem;
+
+		img {
+			width: 25rem;
+		}
+
+		article {
+			.intro {
+				font-size: 2rem;
+			}
+
+			.main-txt {
+				font-size: 3.5rem;
+			}
+		}
+	}
+	// ! HIRING
+
+	// ! FOOTER
+	footer {
+		.footer {
+			padding: 4rem 0;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 0;
+			justify-content: space-between;
+			font-size: 1.5rem;
+
+			.comp-details {
+				width: 30rem;
+
+				.comp-logo {
+					width: 15rem;
+					margin-bottom: 2rem;
+				}
+				.socials {
+					width: 15rem;
+
+					img {
+						width: 3rem;
+					}
+				}
+			}
+
+			.first-list {
+				order: 1;
+			}
+
+			.second-list {
+				order: 2;
+			}
+
+			.newsletter {
+				width: 25rem;
+				form {
+					width: 25rem;
+				}
+			}
+		}
+
+		.copy {
+			font-size: 1.4rem;
+		}
+	}
+	// ! FOOTER
+}
+@media (min-width: 1240px) {
+	// ! NAVIGATION
+
+	.main-nav {
+		padding: 4rem 2rem;
+	}
+
+	.nav-btn {
+		display: none;
+	}
+
+	.navigation {
+		.nav-list {
+			line-height: 1.7;
+			display: flex;
+			gap: 2rem;
+		}
+
+		.login-nav {
+			margin-top: 0;
+			display: flex;
+			align-items: center;
+			gap: 2.5rem;
+		}
+	}
+
+	// ! NAVIGATION
+	// ! HERO
+
+	.hero-con {
+		padding-top: 6rem;
+
+		article {
+			margin: 0;
+
+			.main-text {
+				margin-top: 4rem;
+				margin-bottom: 3rem;
+				font-size: 5rem;
+			}
+
+			.sub-text {
+				font-size: 2rem;
+				margin-bottom: 3rem;
+			}
+
+			.btns {
+				justify-content: flex-start;
+			}
+		}
+
+		.hero-img {
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	// ! HERO
+
+	// ! STRIPE
+	.stripe {
+		& > .container > h2 {
+			width: 100%;
+			font-size: 2.4rem;
+		}
+
+		.details {
+			div {
+				h2 {
+					font-size: 4rem;
+				}
+
+				p {
+					font-size: 1.6rem;
+				}
+			}
+		}
+	}
+
+	// ! STRIPE
+	// ! REASON
+
+	.reasons {
+		.dots {
+			width: 20rem;
+			bottom: -2rem;
+		}
+
+		.t-img {
+			width: 100%;
+			position: relative;
+			top: -4rem;
+		}
+
+		.container {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			align-items: center;
+			gap: 6rem;
+		}
+
+		article {
+			h2 {
+				margin-top: 2rem;
+				font-size: 3rem;
+			}
+
+			p {
+				font-size: 2rem;
+			}
+		}
+
+		.li-check {
+			font-size: 1.8rem;
+
+			li {
+				align-items: center;
+			}
+		}
+	}
+
+	// ! REASON
+	// ! COURSES
+
+	.courses {
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 2rem;
+
+		.course {
+			max-width: 35rem;
+		}
+	}
+	// ! COURSES
+	// ! TESTIMONIAL
+	.testimonials {
+		margin: 10rem 0;
+		.top-row {
+			display: flex;
+			justify-content: space-between;
+
+			h2 {
+				font-size: 1.6rem;
+			}
+
+			p {
+				font-size: 1.9rem;
+			}
+		}
+		.testimonies {
+			height: 35rem;
+			.review {
+				max-width: 60rem;
+				padding: 2rem;
+
+				.rating {
+					img {
+						width: 1.6rem;
+					}
+				}
+
+				h3 {
+					font-size: 1.8rem;
+				}
+				.client-rev {
+					font-size: 1.8rem;
+				}
+				.client {
+					gap: 2rem;
+					margin-top: 3rem;
+
+					h4 {
+						font-size: 1.3rem;
+					}
+
+					p {
+						font-size: 1.4rem;
+					}
+
+					img {
+						width: 6rem;
+						height: 6rem;
+					}
+				}
+			}
+		}
+	}
+	// ! TESTIMONIAL
+
+	// ! HIRING
+	.hiring {
+		height: 39rem;
+
+		img {
+			width: 25rem;
+		}
+
+		article {
+			.intro {
+				font-size: 2rem;
+			}
+
+			.main-txt {
+				font-size: 3.5rem;
+			}
+		}
+	}
+	// ! HIRING
+
+	// ! FOOTER
+	footer {
+		.footer {
+			padding: 4rem 0;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 0;
+			justify-content: space-between;
+			font-size: 1.5rem;
+
+			.comp-details {
+				width: 30rem;
+
+				.comp-logo {
+					width: 15rem;
+					margin-bottom: 2rem;
+				}
+				.socials {
+					width: 15rem;
+
+					img {
+						width: 3rem;
+					}
+				}
+			}
+
+			.first-list {
+				order: 1;
+			}
+
+			.second-list {
+				order: 2;
+			}
+
+			.newsletter {
+				width: 25rem;
+				form {
+					width: 25rem;
+				}
+			}
+		}
+
+		.copy {
+			font-size: 1.4rem;
+		}
+	}
+	// ! FOOTER
+}
