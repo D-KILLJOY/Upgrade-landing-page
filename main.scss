@@ -195,6 +195,11 @@ li {
 			}
 		}
 	}
+	.hero-img {
+		img {
+			width: 100%;
+		}
+	}
 }
 // ! HERO
 // ! STRIPE
@@ -241,6 +246,7 @@ li {
 	}
 
 	.t-img {
+		width: 100%;
 		position: relative;
 		z-index: 10;
 	}
